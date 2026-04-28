@@ -3,7 +3,7 @@
 ## Files
 
 ### `localview_nlp_v5_master.py`
-A pipeline for NLP analysis of local government meeting transcripts from the [LocalView dataset](https://doi.org/10.7910/DVN/TQBZLZ). The script is structured as a series of toggleable modules that can be run independently:
+A pipeline for NLP analysis of local government meeting transcripts from the [LocalView dataset]. The script is structured as a series of toggleable modules that can be run independently:
 
 - **Preprocessing** — Loads municipal council meeting transcripts (2006–2023), cleans text (removes pauses, punctuation, proper nouns), lemmatizes, and saves a preprocessed CSV.
 - **Segmentation** — Splits meeting documents into sentences using the `wtpsplit` SaT model.
