@@ -34,7 +34,7 @@ RUN_TOPICS            = False
 RUN_EMBEDDING         = False
 RUN_SIMILARITY        = False
 RUN_CLEAN_SIMILARITY  = False
-RUN_DYNAMIC_TOPICS    = True
+RUN_DYNAMIC_TOPICS    = False
 
 # =============================================================================
 # IMPORTS  (only load heavy modules if the corresponding step is enabled)
