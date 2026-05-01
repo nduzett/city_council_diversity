@@ -355,17 +355,3 @@ without re-processing already-completed work. Adjust the relevant offset in
 | Similarity computation | `SIMILARITY_STARTING_ROW` | meeting row index |
 
 ---
-
-## Team workflow recommendations
-
-- **Never commit data or outputs.** The `.gitignore` already excludes all CSVs
-  and parquets. Use shared cloud storage (S3, Google Drive, etc.) for data and
-  document the expected folder structure in a shared note.
-- **Branch per experiment.** Name branches after what is being tested
-  (e.g., `experiment/bertopic-min-cluster-200`) rather than by person.
-- **Tag stable runs.** When a full pipeline run produces results going into a
-  paper or report, tag the commit: `git tag v1.0-paper-results`.
-- **Log parameter decisions in `CHANGELOG.md`.** All tuning rationale belongs
-  there, not in Slack threads.
-- **Use GitHub Issues for open methodological questions** so the whole team
-  can track unresolved decisions alongside the code.
