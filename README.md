@@ -14,7 +14,7 @@ to the teams behind both projects for making their work openly available.
 
 ### LocalView
 
-Transcript data comes from the **LocalView** project, which provides a
+Transcript data come from the **LocalView** project, which provides a
 large-scale collection of recorded and transcribed U.S. local government
 meetings.
 
@@ -27,7 +27,7 @@ for making it available to the research community.
 ### American Local Government Elections Database (ALGED)
 
 Election and municipality matching data used in the similarity pipeline
-comes from the **American Local Government Elections Database**.
+come from the **American Local Government Elections Database**.
 
 - Publication: [*Scientific Data* — doi:10.1038/s41597-023-02792-x](https://www.nature.com/articles/s41597-023-02792-x)
 
