@@ -2,10 +2,6 @@
 
 All parameter decisions, model choices, and notable pipeline changes are
 recorded here. Entries are listed newest-first within each version.
-When you change a parameter, add an entry describing what changed, why,
-and what effect (if any) was observed.
-
-Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
