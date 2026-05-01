@@ -58,8 +58,8 @@ localview_nlp/
 ├── segment.py             # Step 2 — split documents into sentences
 ├── sentiment.py           # Step 3 — score sentences + clean + collapse
 ├── topics.py              # Step 4 — LDA topic modeling
-├── similarity.py          # Step 5 — TF-IDF embeddings + cosine similarity
-├── dynamic_topics.py      # Step 6 — BERTopic + per-city novelty scoring
+├── similarity.py          # Step 5 — TF-IDF embeddings + cosine similarity (premilinary; currently not included in the paper)
+├── dynamic_topics.py      # Step 6 — BERTopic + per-city novelty scoring (preliminary; currently not included in the paper)
 │
 ├── requirements.txt       # Python dependencies
 ├── CHANGELOG.md           # Parameter decisions and version history
@@ -76,12 +76,12 @@ Files are listed in the order they should be run.
 
 ### `config_template.py` / `config.py`
 
-**Purpose:** Single source of truth for all file paths, output filenames, and
+**Purpose:** Single source for all file paths, output filenames, and
 tunable parameters. Every other script imports its constants from here, so
 changing a filename or parameter in one place propagates automatically to all
 scripts that use it.
 
-`config.py` is listed in `.gitignore` and is never committed. Each team member
+`config.py` is listed in `.gitignore` and is never committed. Each user
 copies `config_template.py` to `config.py` and sets their own local paths.
 
 **Dependencies:** `os` (stdlib only)
@@ -292,8 +292,6 @@ python -m spacy download en_core_web_sm
 cp config_template.py config.py
 # Open config.py and set DATA_DIRECTORY and SAVE_DIRECTORY
 ```
-
-`config.py` is git-ignored — your local paths are never committed.
 
 ### 3 — Run the pipeline
 
