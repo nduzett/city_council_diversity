@@ -278,7 +278,7 @@ to run `python -m spacy download en_core_web_sm` separately after installation.
 ### 1 — Clone and create a virtual environment
 
 ```bash
-git clone https://github.com/ynduzett/city_council_diversity.git
+git clone https://github.com/nduzett/city_council_diversity.git
 cd city_council_diversity
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
