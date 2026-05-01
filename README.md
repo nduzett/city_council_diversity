@@ -5,6 +5,36 @@ meeting transcripts. The pipeline preprocesses raw transcripts, segments them
 into sentences, scores sentiment at the sentence level, models topics with LDA
 and BERTopic, and computes textual similarity between meetings over time.
 
+---
+
+## Data sources and acknowledgements
+
+This pipeline is built on two publicly available datasets. We are grateful
+to the teams behind both projects for making their work openly available.
+
+### LocalView
+
+Transcript data comes from the **LocalView** project, which provides a
+large-scale collection of recorded and transcribed U.S. local government
+meetings.
+
+- Project site: [localview.net](https://www.localview.net/)
+- Data repository: [Harvard Dataverse — doi:10.7910/DVN/NJTBEM](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/NJTBEM)
+
+We thank the LocalView team for assembling and maintaining this dataset and
+for making it available to the research community.
+
+### American Local Government Elections Database (ALGED)
+
+Election and municipality matching data used in the similarity pipeline
+comes from the **American Local Government Elections Database**.
+
+- Publication: [*Scientific Data* — doi:10.1038/s41597-023-02792-x](https://www.nature.com/articles/s41597-023-02792-x)
+
+We thank the authors of ALGED for compiling and sharing this resource.
+
+---
+
 > **Runtime note:** The segmenting and sentiment steps are the most
 > computationally intensive parts of this pipeline. Depending on hardware,
 > the segmenter can take **tens to several hundred hours** to process the full
