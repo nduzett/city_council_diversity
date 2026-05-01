@@ -132,7 +132,7 @@ as a single pipe-delimited string per meeting row. Processing runs in configurab
 chunks and writes output incrementally to CSV so that long runs can be safely
 resumed.
 
-> ⏱ **Runtime warning:** This step can take **tens to several hundred hours**
+> **Runtime warning:** This step can take **tens to several hundred hours**
 > on the full dataset. Set `SEGMENT_OFFSET_CHUNKS` in `config.py` to resume
 > from a specific chunk after an interruption.
 
@@ -160,7 +160,7 @@ callable sub-steps:
 - **`extract_sample()`** — draws a random sample of 5,000 clean sentences for
   manual inspection and validation.
 
-> ⏱ **Runtime warning:** Running three models sentence-by-sentence across the
+> **Runtime warning:** Running three models sentence-by-sentence across the
 > full corpus is among the most time-intensive steps in the pipeline. Expect
 > **comparable or longer runtime than the segmenter**, potentially reaching
 > several hundred hours. Set `SENTIMENT_OFFSET` in `config.py` to resume from
